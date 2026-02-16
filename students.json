@@ -1,0 +1,20 @@
+{
+    "FirstName": "AjmeraSundhar",
+    "dob": "1997-07-10",
+    "address": [
+        {
+            "type": "perm",
+            "flatnumber": 105,
+            "street": "yellampet",
+            "city": "macahreddy"
+        },
+        { 
+            "type": "current",
+            "flatnumber": 1005,
+            "street": "yellampet",
+            "city":"macahreddy"
+
+
+        }
+    ]
+}
