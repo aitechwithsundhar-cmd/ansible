@@ -1,20 +1,42 @@
 {
-    "FirstName": "AjmeraSundhar",
-    "dob": "1997-07-10",
-    "address": [
+  "students": [
+    {
+      "FirstName": "AjmeraSundhar",
+      "dob": "1997-07-10",
+      "address": [
         {
-            "type": "perm",
-            "flatnumber": 105,
-            "street": "yellampet",
-            "city": "macahreddy"
+          "type": "perm",
+          "flatnumber": 105,
+          "street": "yellampet",
+          "city": "machareddy"
         },
-        { 
-            "type": "current",
-            "flatnumber": 1005,
-            "street": "yellampet",
-            "city":"macahreddy"
-
-
+        {
+          "type": "current",
+          "flatnumber": 1005,
+          "street": "yellampet",
+          "city": "machareddy"
         }
-    ]
+      ],
+      "skills": ["java", "devops", "cloud"]
+    },
+    {
+      "FirstName": "Ramesh",
+      "dob": "1996-05-12",
+      "address": [
+        {
+          "type": "perm",
+          "flatnumber": 210,
+          "street": "kukatpally",
+          "city": "hyderabad"
+        },
+        {
+          "type": "current",
+          "flatnumber": 45,
+          "street": "madhapur",
+          "city": "hyderabad"
+        }
+      ],
+      "skills": ["python", "ansible", "aws"]
+    }
+  ]
 }

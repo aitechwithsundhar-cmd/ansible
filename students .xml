@@ -1,0 +1,39 @@
+<!-- student Object-->
+<students>
+<student>
+    <FirstName>Ramesh</FirstName>
+    <DOB>1997-10-07</DOB>
+    <Email>ajmeerasunder@gmail.com</Email>
+
+    <Address>
+        </PermAddress>
+             <FlatNumber>026</FlatNumber>
+             <Street>thumkunta thanda</Street>
+             <City>Yellampet</City>
+        </PermAddress>
+        <CurrentAddress>
+             <FlatNumber>02</FlatNumber>
+             <Street>ypt road</Street>
+             <City>Machareddy</City>
+        </CurrentAddress>
+     </Addresses>
+</student>
+
+<student>
+    <FirstName>Ramesh</FirstName>
+    <DOB>1997-10-07</DOB>
+    <Email>ajmeerasunder@gmail.com</Email>
+
+    <Address>
+        </PermAddress>
+             <FlatNumber>026</FlatNumber>
+             <Street>thumkunta thanda</Street>
+             <City>Yellampet</City>
+        </PermAddress>
+        </CurrentAddress>
+             <FlatNumber>02</FlatNumber>
+             <Street>ypt road</Street>
+             <City>Machareddy</City>
+        </CurrentAddress>
+     </Addresses>
+<student>
