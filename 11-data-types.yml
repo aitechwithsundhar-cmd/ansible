@@ -12,7 +12,7 @@
     - linux
     - shell
     - ansible
-  Tasks:
+  tasks:
   - name: print varaibles
     ansible.builtin.debug:
       msg: |
