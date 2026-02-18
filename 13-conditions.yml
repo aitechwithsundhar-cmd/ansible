@@ -7,5 +7,5 @@
   - name: is ansible more than 5 sessions
     ansible.builtin.debug:
       msg: "yes, more then 5 sessions"
-    when: NUMER_OF_SERVICES > 5 
+    when: NUMER_OF_SERVICES > 10
       
