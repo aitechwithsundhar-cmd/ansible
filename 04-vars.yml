@@ -1,7 +1,7 @@
 - name: play level variables
   hosts: local 
   connection: local 
-  varse:
+  vars:
     COURSE: "DevOps with AWS"
     DURATION: "140HRS"
     TRAINER: "shivakumar reddy"
