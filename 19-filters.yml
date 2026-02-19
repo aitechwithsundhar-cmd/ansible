@@ -21,7 +21,7 @@
       msg: "{{ tagslist | dict2items }}" #changing map to list
 
   - name: read students yaml
-    ansible.builtin.set_facts: # setting the variable 
+    ansible.builtin.set_fact: # setting the variable 
       student_yaml: "{{ lookup('file','students.yml') | from_yaml }}" #lookup is also a filter 
     
   - name: convert yaml to json 
