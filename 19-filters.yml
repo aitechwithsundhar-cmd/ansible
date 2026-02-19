@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+  tags: #map
+    name: ansible 
+    project: roboshop
+    component: catalouge 
   tasks:
   - name: greetings 
     ansible.builtin.debug:
@@ -10,4 +14,8 @@
   
   - name: convert strings to list 
     ansible.builtin.debug:
-      msg: "{{ topics | split(',') }}"
+      msg: "{{ topics | split(',') }}" # changing strings to list 
+
+  - name: conver map to list 
+    ansible.builtin.debug:
+      msg: "{{ tags | dict2items }}"
