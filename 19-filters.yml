@@ -1,29 +1,31 @@
-- name: demo on filters 
+- name: demo on filters
   hosts: localhost
   connection: local
+
   vars:
     topics: linux, shell, ansible, terraform
-    tagslist: #map
-     name: ansible 
-     project: roboshop
-     component: catalouge 
+    tagslist:
+      name: ansible
+      project: roboshop
+      component: catalogue
+
   tasks:
-  - name: greetings 
-    ansible.builtin.debug:
-      msg: "hi sundhar ajmera, {{ GREETINGS | default('good morning')}}"
-  
-  - name: convert strings to list 
-    ansible.builtin.debug:
-      msg: "{{ topics | split(',') }}" # changing strings to list 
+    - name: greetings
+      ansible.builtin.debug:
+        msg: "hi sundhar ajmera, {{ GREETINGS | default('good morning') }}"
 
-  - name: conver map to list 
-    ansible.builtin.debug:
-      msg: "{{ tagslist | dict2items }}" #changing map to list
+    - name: convert strings to list
+      ansible.builtin.debug:
+        msg: "{{ topics | split(',') }}"
 
-  - name: read students yaml
-    ansible.builtin.set_fact: # setting the variable 
-      student_yaml: "{{ lookup('file','students.yaml') | from_yaml }}" #lookup is also a filter 
-    
-  - name: convert yaml to json 
-    ansible.builtin.debug:
-      msg: "{{student_yaml | to_nice_json }}"
+    - name: convert map to list
+      ansible.builtin.debug:
+        msg: "{{ tagslist | dict2items }}"
+
+    - name: read students yaml
+      ansible.builtin.set_fact:
+        student_yaml: "{{ lookup('file', 'students.yaml') | from_yaml }}"
+
+    - name: convert yaml to json
+      ansible.builtin.debug:
+        msg: "{{ student_yaml | to_nice_json }}"
