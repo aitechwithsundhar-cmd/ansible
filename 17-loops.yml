@@ -2,8 +2,8 @@
   hosts: localhost
   connection: local 
   tasks:
-  - name: install packages
-    ansible.builtin.packages:
+  - name: install package
+    ansible.builtin.package:
     name: "{{item}}"
     state: present
     loop: 
