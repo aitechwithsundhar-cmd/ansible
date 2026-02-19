@@ -1,0 +1,32 @@
+students:
+  - first_name: RahulVerma
+    dob: 1998-03-15
+    address:
+      - type: permanent
+        flat_number: 301
+        street: MG Road
+        city: Bengaluru
+      - type: current
+        flat_number: 12
+        street: Whitefield Main Rd
+        city: Bengaluru
+    skills:
+      - python
+      - ansible
+      - aws
+
+  - first_name: SnehaPatel
+    dob: 1999-11-02
+    address:
+      - type: permanent
+        flat_number: 88
+        street: Law Garden
+        city: Ahmedabad
+      - type: current
+        flat_number: 502
+        street: Hinjewadi Phase 1
+        city: Pune
+    skills:
+      - devops
+      - docker
+      - kubernetes
