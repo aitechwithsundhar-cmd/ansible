@@ -5,6 +5,7 @@
   vars:
     topics: linux, shell, ansible, terraform
     course: "DevOps with Ansible"
+    myIp: "246.567.890.287"
     tagslist:
       name: ansible
       project: roboshop
@@ -34,3 +35,7 @@
     - name : conver to upper case
       ansible.builtin.debug:
         msg: "{{ course | lower }}"
+
+    - nema: check ipv4
+      ansible.builtin.debug:
+        msg: "{{ myIp | ansible.utils.ipv4 }}"
