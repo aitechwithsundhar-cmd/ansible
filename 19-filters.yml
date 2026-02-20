@@ -4,6 +4,7 @@
 
   vars:
     topics: linux, shell, ansible, terraform
+    course: "DevOps with Ansible"
     tagslist:
       name: ansible
       project: roboshop
@@ -29,3 +30,7 @@
     - name: convert yaml to json
       ansible.builtin.debug:
         msg: "{{ student_yaml | to_nice_json }}"
+
+    - name : conver to upper case
+      ansible.builtin.debug:
+        msg: "{{ course | lower }}"
