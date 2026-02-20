@@ -4,3 +4,11 @@
   - name: print haeelo world 
     ansible.builtin.debug:
       msg: "hello world!"
+
+- name: PLAY-2
+  hosts: localhost
+  connection: local 
+  tasks:
+  - name: play-2 and task-1 
+    ansible.builtin.debug:
+      mgs: "Hello from PLAY-2 and TASK-1 "
